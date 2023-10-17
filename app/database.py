@@ -8,7 +8,8 @@ from .config import settings
 # USERNAME = 'sa'
 # PASSWORD = 'fgaror'
 
-SQLALCHEMY_DATABASE_URL = f'mssql+pyodbc://{settings.database_username}:{settings.database_password}@{settings.database_server}/{settings.database_name}?driver=SQL+Server+Native+Client+11.0'
+SQLALCHEMY_DATABASE_URL = f'mssql+pyodbc://{settings.database_username}:{settings.database_password}@{settings.database_server}/{settings.database_name}?driver=ODBC+Driver+17+for+SQL+Server'
+# SQLALCHEMY_DATABASE_URL = f'mssql+pyodbc://{settings.database_username}:{settings.database_password}@{settings.database_server}/{settings.database_name}?driver=SQL+Server+Native+Client+11.0'
 # SQLALCHEMY_DATABASE_URL = 'mssql+pyodbc://' + USERNAME + ':' + PASSWORD + '@' + SERVER + '/' + DATABASE + '?driver=SQL+Server+Native+Client+11.0'
 # SQLALCHEMY_DATABASE_URL = "postgresql://user:password@postgresserver/db"
 
