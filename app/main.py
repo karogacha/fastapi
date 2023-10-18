@@ -14,10 +14,7 @@ app = FastAPI()
 
 # list of all the domains that can talk to your API
 origins = [
-    "http://localhost.tiangolo.com",
-    "https://localhost.tiangolo.com",
-    "http://localhost",
-    "http://localhost:8080",
+    "*",
 ]
 
 # To resolve the issue of CORS
