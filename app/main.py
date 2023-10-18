@@ -8,14 +8,12 @@ from .config import settings
 
 
 # if you use alembic, this is not necessary
-models.Base.metadata.create_all(bind=engine)
+# models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
 # list of all the domains that can talk to your API
-origins = [
-    "*",
-]
+origins = ["*"]
 
 # To resolve the issue of CORS
 app.add_middleware(
