@@ -10,7 +10,7 @@ from app.config import settings
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
 config = context.config
-config.set_main_option("sqlalchemy.url",f'mssql+pyodbc://{settings.database_username}:{settings.database_password}@{settings.database_server}/{settings.database_name}?driver=ODBC+Driver+17+for+SQL+Server&encoding=utf-8&azure=true')
+config.set_main_option("sqlalchemy.url",f'mssql+pyodbc://{settings.database_username}:{settings.database_password}@{settings.database_server}/{settings.database_name}?driver=ODBC+Driver+17+for+SQL+Server')
 
 # Interpret the config file for Python logging.
 # This line sets up loggers basically.
